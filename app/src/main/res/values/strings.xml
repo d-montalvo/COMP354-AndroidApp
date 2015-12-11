@@ -24,4 +24,5 @@
         <item>Session Hijacking</item>
         <item>HTTP GET issues</item>
     </string-array>
+    <string name="title_activity_project_details">ProjectDetails</string>
 </resources>
