@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Vulnerability Monitor</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="listView">
+        <item>CocoQuery</item>
+        <item>EnvDTE</item>
+        <item>Extensibility</item>
+        <item>FormLayoutMaker</item>
+        <item>HTTPClient</item>
+        <item>HermiT</item>
+        <item>JDOM</item>
+        <item>JLex</item>
+        <item>JavaMail</item>
+        <item>NUnit</item>
+        <item>OKI</item>
+        <item>OWASP</item>
+        <item>Microsoft.Build.Engine</item>
+        <item>Microsoft.VisualStudio.CommandBars</item>
+    </string-array>
+    <string-array name="listView2">
+        <item>HTTPS vulnerability</item>
+        <item>Session Hijacking</item>
+        <item>HTTP GET issues</item>
+    </string-array>
+</resources>
