@@ -7,76 +7,59 @@
     tools:context="com.factsrus.vulnerabilitymonitor.ProjectDetailsActivity">
 
 
-    <LinearLayout
-        android:orientation="vertical"
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="137dp"
+        android:layout_height="38dp"
+        android:text="Refresh"
+        android:id="@+id/refreshBtn"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/DetailsView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/refreshBtn" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dependencies: "
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/DepList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:weightSum="1"
-        android:id="@+id/LinearLayout">
+        android:layout_height="160dp"
+        android:id="@+id/DepList"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-        <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Refresh"
-            android:id="@+id/button" />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Vulnerabilities: "
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/VulnList"
+        android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/ArtifactIDView"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/IDView"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/GIDView"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/GetVersion"
-            android:layout_gravity="center_horizontal" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Dependencies: "
-            android:id="@+id/DepText" />
-
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="111dp"
-            android:id="@+id/DepList"
-            android:layout_gravity="center_horizontal"
-            android:layout_weight="0.68" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Vulnerabilities:"
-            android:id="@+id/VulnText"
-            android:layout_gravity="center_horizontal" />
-
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="128dp"
-            android:id="@+id/VulnList" />
-
-    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/VulnList"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

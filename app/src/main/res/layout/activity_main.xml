@@ -14,8 +14,19 @@
 
         <ListView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/MainList" />
+            android:layout_height="435dp"
+            android:id="@+id/MainList"
+            android:layout_gravity="center_horizontal|bottom" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="137dp"
+            android:layout_height="38dp"
+            android:text="Refresh"
+            android:id="@+id/refreshBtn"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
     </FrameLayout>
 
 </RelativeLayout>
