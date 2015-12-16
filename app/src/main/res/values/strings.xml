@@ -2,7 +2,8 @@
     <string name="app_name">Vulnerability Monitor</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Auto-update setting</string>
+    <string name="action_settings2">Project list setting</string>
     <string-array name="listView">
         <item>CocoQuery</item>
         <item>EnvDTE</item>
